@@ -25,6 +25,17 @@ class Node {
         }
         System.out.println(n.data);
     }
+
+    public void delete(int data) {
+        Node n = this;
+        while (n.next != null) {
+            n = n.next;
+            if (n.next.data == data) {
+                break;
+            }
+        }
+        n.next = n.next.next;
+    }
 }
 
 public class ArrayList {
@@ -37,6 +48,7 @@ public class ArrayList {
         head.retrieve();
         head.append(30);
         head.append(40);
+        head.delete(40);
         head.append(50);
 
         head.retrieve();
