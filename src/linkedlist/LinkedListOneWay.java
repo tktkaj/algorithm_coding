@@ -1,4 +1,4 @@
-package arraylist;
+package linkedlist;
 
 class Node {
 
@@ -38,7 +38,7 @@ class Node {
     }
 }
 
-public class ArrayList {
+public class LinkedListOneWay {
 
     public static void main(String[] args) {
 
